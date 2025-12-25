@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Example</title>
+</head>
+<body>
+
+    <button id="alertButton">Click Me</button>
+
+    <script>
+        document.getElementById('alertButton').onclick = function() {
+            const userResponse = confirm("Do you accept?");
+
+            if (userResponse) {
+                alert("You clicked Accept!");
+                // You can add further actions here, like redirecting to a URL.
+                window.location.href = 'https://www.youtube.com'; // Redirect example
+            } else {
+                alert("You clicked Ignore!");
+            }
+        };
+    </script>
+
+</body>
+</html>
